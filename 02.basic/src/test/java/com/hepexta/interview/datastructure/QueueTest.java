@@ -25,7 +25,7 @@ public class QueueTest {
         Queue queue = new Queue();
         int x = 1;
         queue.enQueue(x);
-        queue.enQueue(x+1);
+        queue.enQueue(x + 1);
         Assert.assertEquals(x, queue.deQueue());
         Assert.assertFalse(queue.isEmpty());
     }

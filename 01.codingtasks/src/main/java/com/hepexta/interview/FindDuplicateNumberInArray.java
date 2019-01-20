@@ -9,7 +9,7 @@ public class FindDuplicateNumberInArray {
         Set<Integer> set = new HashSet<>();
         int result = 0;
         for (Integer integer : arr) {
-            if (!set.add(integer)){
+            if (!set.add(integer)) {
                 result = integer;
                 break;
             }

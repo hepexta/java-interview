@@ -16,7 +16,7 @@
         <module>04.designpatterns</module>
         <module>05.cleancode</module>
         <module>06.testing</module>
-
+        <module>15.spring</module>
     </modules>
 
     <properties>

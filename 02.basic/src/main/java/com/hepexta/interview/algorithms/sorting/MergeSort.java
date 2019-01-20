@@ -4,7 +4,7 @@ public class MergeSort {
 
     private static int traverseCount = 0;
 
-    public static int sort(int[] arr){
+    public static int sort(int[] arr) {
         traverseCount = 0;
         mergeSort(arr, arr.length);
         return traverseCount;

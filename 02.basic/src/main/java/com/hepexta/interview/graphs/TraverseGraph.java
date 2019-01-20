@@ -61,8 +61,8 @@ public class TraverseGraph {
             for (Edge edge : node.connections) {
                 if ((edge.getStart().name.equals(String.valueOf(src))
                         && edge.getEnd().name.equals(String.valueOf(dest)))
-                || (edge.getStart().name.equals(String.valueOf(dest))
-                        && edge.getEnd().name.equals(String.valueOf(src)))){
+                        || (edge.getStart().name.equals(String.valueOf(dest))
+                        && edge.getEnd().name.equals(String.valueOf(src)))) {
                     System.out.println(edge);
                     return true;
                 }
@@ -71,7 +71,7 @@ public class TraverseGraph {
         return false;
     }
 
-    private static ArrayList<Edge> getEdges(Edge...edges) {
+    private static ArrayList<Edge> getEdges(Edge... edges) {
         return new ArrayList<>(Arrays.asList(edges));
     }
 

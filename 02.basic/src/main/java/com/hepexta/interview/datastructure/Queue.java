@@ -15,20 +15,18 @@ public class Queue {
     }
 
     void enQueue(int x) {
-        if (top == MAX){
+        if (top == MAX) {
             System.out.println("Stack Overflow");
-        }
-        else {
+        } else {
             a[++top] = x;
         }
     }
 
     int deQueue() {
-        if (top < 0){
+        if (top < 0) {
             System.out.println("Stack Underflow");
             return 0;
-        }
-        else {
+        } else {
             top--;
         }
         return a[0];
