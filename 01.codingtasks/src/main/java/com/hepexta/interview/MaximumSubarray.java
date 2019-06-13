@@ -2,17 +2,14 @@ package com.hepexta.interview;
 
 public class MaximumSubarray {
 
-    //O(N)
-    public static int getIndexesForTarget(int[] nums) {
-        int result = 0;
-        int storyPointer = 0;
-        for (int num : nums) {
-            storyPointer+=num;
-            if (storyPointer<0) {
-                storyPointer = 0;
-            }
-            if(result < storyPointer) {
-                result = storyPointer;
+    public static int getMaxSubArrayNSquare(int[] nums) {
+        int result = Integer.MIN_VALUE;
+        for (int i=0;i<nums.length;i++){
+            int num = nums[i];
+            for (int j=i;j<nums.length;j++){
+                if (i!=j)
+                    num+=nums[j];
+                result = result < num ? num : result;
             }
         }
         return result;

@@ -50,13 +50,17 @@ public class TwoSum {
         int[] ints = new int[2];
         int i=0;
         int j=nums.length-1;
-        while (nums[j]+nums[i]!=target){
-            if(j>i){
+        while (i<j){
+            if(nums[j]+nums[i]>target){
                 j--;
             }
-            else {
+            else if(nums[j]+nums[i]<target) {
                 i++;
-                j=nums.length-1;
+            }
+            else {
+                ints[0]=i;
+                ints[1]=j;
+                return ints;
             }
         }
         ints[0]=i;
