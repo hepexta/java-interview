@@ -30,4 +30,30 @@ public class TwoSumTest {
         target = 26;
         Assert.assertArrayEquals(new int[]{2, 3}, TwoSum.getIndexesRecursion(nums, 0, target));
     }
+
+    @Test
+    public void test_map() {
+        int[] nums = new int[]{2, 7, 11, 15};
+        int target = 9;
+        Assert.assertArrayEquals(new int[]{0, 1}, TwoSum.getIndexesMap(nums, target));
+
+        target = 17;
+        Assert.assertArrayEquals(new int[]{0, 3}, TwoSum.getIndexesMap(nums, target));
+
+        target = 26;
+        Assert.assertArrayEquals(new int[]{2, 3}, TwoSum.getIndexesMap(nums, target));
+    }
+
+    @Test
+    public void test_twoPoints() {
+        int[] nums = new int[]{2, 7, 11, 15};
+        int target = 9;
+        Assert.assertArrayEquals(new int[]{0, 1}, TwoSum.getIndexesTwoPoints(nums, target));
+
+        target = 17;
+        Assert.assertArrayEquals(new int[]{0, 3}, TwoSum.getIndexesTwoPoints(nums, target));
+
+        target = 26;
+        Assert.assertArrayEquals(new int[]{2, 3}, TwoSum.getIndexesTwoPoints(nums, target));
+    }
 }
