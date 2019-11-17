@@ -19,6 +19,7 @@ public class SingletonBean {
 
     public PrototypeBean getPrototypeBean() {
         logger.info(String.valueOf(LocalTime.now()));
+        logger.info(prototypeBean);
         return prototypeBean;
     }
 }
