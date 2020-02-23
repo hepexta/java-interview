@@ -1,6 +1,6 @@
 package com.hepexta.interview.concurrency;
 
-public class WaitNotify {
+public class SendReceiveDemo {
     private String packet;
 
     // True if receiver should wait
@@ -10,6 +10,7 @@ public class WaitNotify {
     public synchronized void send(String packet) {
         while (!transfer) {
             try {
+                System.out.println("Waiting: "+Thread.currentThread().getName());
                 wait();
             } catch (InterruptedException e)  {
                 Thread.currentThread().interrupt();
@@ -38,7 +39,7 @@ public class WaitNotify {
     }
 
     public static void main(String[] args) {
-        WaitNotify waitNotify = new WaitNotify();
+        SendReceiveDemo waitNotify = new SendReceiveDemo();
 
         Thread t1 = new Thread(() -> {
             waitNotify.send("packet1");
