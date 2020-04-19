@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Count all characters in the input stream
+ */
 public class FrequencyCounter {
 
     public Map<Character, Integer> count(String input) {

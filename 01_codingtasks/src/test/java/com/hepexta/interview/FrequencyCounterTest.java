@@ -23,19 +23,21 @@ public class FrequencyCounterTest {
 
     @Test
     public void givenStream_whenCount_thenResult_time() {
-      /*  Assert.assertTrue(getStreamExecutionTime(10000)>getStringExecutionTime(10000));
+      /*Assert.assertTrue(getStreamExecutionTime(10000)>getStringExecutionTime(10000));
         Assert.assertTrue(getStreamExecutionTime(100000)>getStringExecutionTime(100000));
         Assert.assertTrue(getStreamExecutionTime(1000000)>getStringExecutionTime(1000000));
         Assert.assertFalse(getStreamExecutionTime(10000000)>getStringExecutionTime(10000000));
-     */   Assert.assertFalse(getStreamExecutionTime(30000000)>getStringExecutionTime(30000000));
+     */
+        Assert.assertFalse(getStreamExecutionTime(30000000)>getStringExecutionTime(30000000));
     }
 
     private long getStringExecutionTime(int qty) {
         StringBuilder str = getStringBuilder(qty);
         FrequencyCounter counter = new FrequencyCounter();
-        long time;
-        time = new Date().getTime();
-        counter.count(str.toString());
+
+        String input = str.toString();
+        long time = new Date().getTime();
+        counter.count(input);
         long stringExecutionTime = new Date().getTime() - time;
         System.out.println(stringExecutionTime);
         return stringExecutionTime;
