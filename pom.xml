@@ -19,6 +19,7 @@
         <module>07_javabasic</module>
         <module>08_collections</module>
         <module>09_exceptions</module>
+        <module>13_concurrency</module>
         <module>15_spring</module>
 
     </modules>
@@ -59,10 +60,6 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.7.0</version>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.20.1</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
