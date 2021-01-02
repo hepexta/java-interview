@@ -18,4 +18,15 @@ public class CheckPalindrome {
         sb.append(string.toCharArray());
         return sb.reverse().toString();
     }
+
+    public static boolean isPalindromeUsingReverse(int i) {
+        int temp = i;
+        int reverse = 0;
+        while (temp > 0){
+            int last = temp%10;
+            reverse = reverse*10 + last;
+            temp=temp/10;
+        }
+        return i == reverse;
+    }
 }

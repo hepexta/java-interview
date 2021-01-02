@@ -14,5 +14,9 @@ public class CheckPalindromeTest {
         assertTrue(CheckPalindrome.isPalindromeUsingReverse("asdsa"));
         assertTrue(CheckPalindrome.isPalindromeUsingReverse("asddsa"));
         assertFalse(CheckPalindrome.isPalindromeUsingReverse("asdasd"));
+
+        assertTrue(CheckPalindrome.isPalindromeUsingReverse(1234321));
+        assertTrue(CheckPalindrome.isPalindromeUsingReverse(12344321));
+        assertFalse(CheckPalindrome.isPalindromeUsingReverse(123123));
     }
 }
