@@ -14,4 +14,10 @@ public class PermutationTest {
         List<String> expected = Arrays.asList("ABC", "ACB", "BAC", "BCA", "CAB", "CBA");
         assertArrayEquals(expected.toArray(), Permutation.generatePermutations("ABC").toArray());
     }
+
+    @Test
+    public void generatePermutationsWithLimit() {
+        List<String> expected = Arrays.asList("AB", "AC", "BA", "BC", "CA", "CB");
+        assertArrayEquals(expected.toArray(), Permutation.generatePermutations("ABC", 2).toArray());
+    }
 }
