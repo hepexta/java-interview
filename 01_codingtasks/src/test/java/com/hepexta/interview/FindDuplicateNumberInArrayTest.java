@@ -1,5 +1,6 @@
 package com.hepexta.interview;
 
+import com.hepexta.interview.arrays.FindDuplicateNumberInArray;
 import org.junit.Assert;
 import org.junit.Test;
 

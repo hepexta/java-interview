@@ -1,5 +1,6 @@
 package com.hepexta.interview;
 
+import com.hepexta.interview.strings.CheckPalindrome;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,4 +1,4 @@
-package com.hepexta.interview;
+package com.hepexta.interview.strings;
 
 import java.util.stream.IntStream;
 

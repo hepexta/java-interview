@@ -1,4 +1,4 @@
-package com.hepexta.interview;
+package com.hepexta.interview.refactor;
 
 /**
  * Example of pseudocode for Refactoring

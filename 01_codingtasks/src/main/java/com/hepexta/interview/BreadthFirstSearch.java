@@ -18,7 +18,6 @@ public class BreadthFirstSearch {
         // Create a queue for BFS
         LinkedList<Integer> queue = new LinkedList<>();
         LinkedList<Integer> result = new LinkedList<>();
-
         // Mark the current node as visited and enqueue it
         visited[s] = true;
         queue.add(s);
