@@ -21,6 +21,7 @@
         <module>09_exceptions</module>
         <module>13_concurrency</module>
         <module>15_spring</module>
+        <module>10_java8</module>
 
     </modules>
 
