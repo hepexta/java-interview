@@ -11,7 +11,7 @@ public class MergeSortedArraysTests {
         Integer[] arr2 = new Integer[]{1, 4, 8, 9, 10, 15};
         Integer[] expected = new Integer[]{1, 1, 2, 3, 4, 4, 7, 8, 9, 9, 10, 15};
 
-        Assert.assertArrayEquals(expected, MergeSortedArrays.sort(arr1, arr2));
+        Assert.assertArrayEquals(expected, MergeSortedArrays.merge(arr1, arr2));
     }
 
     @Test

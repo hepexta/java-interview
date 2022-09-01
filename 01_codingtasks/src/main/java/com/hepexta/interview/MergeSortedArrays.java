@@ -2,7 +2,7 @@ package com.hepexta.interview;
 
 public class MergeSortedArrays {
 
-    public static Integer[] sort(Integer[] arr1, Integer[] arr2) {
+    public static Integer[] merge(Integer[] arr1, Integer[] arr2) {
 
         int i = 0;
         int j = 0;
